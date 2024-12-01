@@ -8,8 +8,8 @@ namespace LinkIn
     {
         static void Main(string[] args)
         {
-            //Ex1();
-            //Ex2();
+            Ex1();
+            Ex2();
             Ex3();
         }
 
@@ -103,7 +103,7 @@ namespace LinkIn
             startsWithA.ForEach(c => Console.Write(c + ", "));
             Console.WriteLine();
 
-            var endsWithM = cities.Where(c => c.ToLower().EndsWith("m"))
+            var endsWithM = cities.Where(c => c.ToLower().EndsWith("n"))
                          .ToList();
             Console.Write("Selected cities that end with N: ");
             endsWithM.ForEach(c => Console.Write(c + ", "));
